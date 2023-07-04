@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 import ModuleList from './ModuleList';
 import uuid from 'react-uuid';
 import NavBar from './NavBar';
+import Goals from './Goals'
 
 const App = () => {
 	const [modules, setModules] = useState([{ id: 1, name: 'test1', hours: '2', completed: false}]);
@@ -21,6 +22,7 @@ const App = () => {
 	return (
 		<>
 			<NavBar/>
+			<Goals/>
 			<div className="p-4">
 				<h1 className="font-bold mb-4">Todo-list</h1>
 				<div className="flex flex-row w-80">
